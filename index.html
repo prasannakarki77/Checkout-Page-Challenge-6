@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Checkout</h1>
+      <div class="amount">
+        <div class="item item1">
+          <img src="photo1.png" alt="" />
+          <div class="price">
+            <h4 class="item-name">Vintage Backbag</h4>
+            <span class="cost"
+              >$54.99 <span class="discount">$94.99</span>
+            </span>
+            <div class="qty"></div>
+          </div>
+        </div>
+        <div class="item item2">
+          <img src="photo2.png" alt="" />
+          <div class="price">
+            <h4 class="item-name">Levi Shoes</h4>
+            <span class="cost"
+              >$74.99 <span class="discount">$124.99</span>
+            </span>
+            <div class="qty"></div>
+          </div>
+        </div>
+      </div>
+      <div class="form-container">
+        <div class="form contact-form">
+          <h3>Contact information</h3>
+          <form action="">
+            <label for="email">E-mail</label>
+            <div class="email">
+              <i class="fas fa-envelope"></i>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <label for="phone">Phone</label>
+            <div class="phone">
+              <i class="fas fa-phone-alt"></i>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="form shipping-form">
+          <h3>Shipping address</h3>
+          <form action="">
+            <label for="name">Full name</label>
+            <div class="name">
+              <i class="fas fa-user-circle"></i>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Rodney Cotton"
+              />
+            </div>
+            <label for="address">Address</label>
+            <div class="address">
+              <i class="fas fa-home"></i>
+              <input
+                type="address"
+                name="address"
+                id="address"
+                placeholder="Your address.."
+              />
+            </div>
+            <label for="city">City</label>
+            <div class="city">
+              <i class="fas fa-city"></i>
+              <input
+                type="city"
+                name="city"
+                id="city"
+                placeholder="Your city.."
+              />
+            </div>
+            <div class="inline">
+              <div class="country">
+                <label for="country">Country</label>
+                <div >
+                  <i class="fas fa-globe-asia"></i>
+                  <select placeholder="Your country.." name="country" id="country">
+                    
+                    <option value="" disabled selected hidden>Your country..</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Kathmandu">Kathmandu</option>
+                  </select>
+                </div>
+              </div>
+              <div class="postal">
+                <label for="postal">Postal code</label>
+                <div>
+                  <i class="fas fa-mail-bulk"></i>
+                  <input
+                    type="postal"
+                    name="postal"
+                    id="postal"
+                    placeholder="Your postal code.."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" name="save-info" id="save-info">
+              <label class="check"for="save-info">Save this information for next time</label>
+            </div>
+          </form>
+          <button id="continue-btn" type="submit">Continue</button>
+        </div>
+        
+
+      </div>
+    </div>
+  </body>
+</html>

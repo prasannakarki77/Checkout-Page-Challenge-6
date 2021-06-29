@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  outline: none;
+}
+.container {
+  margin: 10vh auto;
+  max-width: 1000px;
+  position: relative;
+}
+
+.amount {
+  width: 383px;
+  height: 535px;
+  background: #f2f2f2;
+  border-radius: 12px;
+  padding: 33px;
+  position: absolute;
+  right: 0;
+  top: 110px;
+}
+.item img {
+  width: 134.21px;
+  height: 136.27px;
+  border-radius: 13px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.item {
+  display: flex;
+}
+.item-name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 8.82px;
+  color: #4e5150;
+}
+span.cost {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #f2994a;
+}
+
+span.discount {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration-line: line-through;
+  color: #4e5150;
+  padding-left: 4px;
+}
+div.qty {
+  width: 134.25px;
+  height: 52px;
+  left: 1002.17px;
+  top: 285.27px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 12px;
+  margin-top: 33.5px;
+}
+
+.item {
+  margin-bottom: 33px;
+}
+
+.form-container,
+.form {
+  max-width: 465px;
+  margin: 58px 0;
+}
+.form form div {
+  position: relative;
+}
+form {
+  margin-top: 10px;
+}
+input,
+select {
+  padding: 18px 18px 18px 52px;
+  width: 100%;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+  margin-bottom: 10px;
+}
+
+i {
+  position: absolute;
+  top: 20px;
+  left: 14px;
+  color: #828282;
+  transform: scale(1.3);
+}
+
+label {
+  display: inline-block;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.inline {
+  display: flex;
+  justify-content: space-between;
+}
+/* .inline div{
+  display: inline-block;
+} */
+
+.inline div {
+  width: 217px;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+label.check {
+  position: absolute;
+  top: 3px;
+  left: 30px;
+}
+input[type="checkbox"] {
+  width: 21px;
+  height: 21px;
+  margin-bottom: 0;
+}
+
+#save-info {
+  width: 21px;
+}
+.form-container {
+  position: relative;
+  height: 760px;
+}
+
+#continue-btn {
+  position: absolute;
+  width: 166px;
+  height: 54px;
+  right: 5px;
+  bottom: 0;
+  background: #f2994a;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 1027px) {
+  .container {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 890px) {
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .amount {
+    position: static;
+    margin-top: 20px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 460px;
+  }
+  div.postal {
+    margin-left: 10px;
+  }
+  #continue-btn {
+    bottom: -50px;
+  }
+  .amount {
+    width: 444px;
+  }
+}
