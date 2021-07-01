@@ -40,25 +40,3 @@ function decrement2(){
 function submitForms(){
     window.alert("Checkout successfull!!");
 }
-
-// var email =document.getElementById("email");
-// var name =document.getElementById("name");
-// var phone =document.getElementById("phone");
-// var address =document.getElementById("address");
-// var city =document.getElementById("city");
-// var country =document.getElementById("country");
-// var postal =document.getElementById("postal");
-// var save =document.querySelector("save-info");
-// var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
-// var message= []
-// function submitForms(){
-
-//     if (email.value==""|| name.value=="" || phone.value==""|| address.value==""|| city.value=="" || country.value==""|| postal.value==""|| save.value==""){
-//         window.alert("Please fill in all the fields");
-//         phone.focus();
-//     }
-//     if (email.value)
-//     document.getElementById("form1").submit();
-//     document.getElementById("form2").submit();
-//     window.alert("Checkout successfull!!");
-// }
