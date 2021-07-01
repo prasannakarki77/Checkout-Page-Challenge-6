@@ -18,7 +18,7 @@
       <h1>Checkout</h1>
       <div class="amount">
         <div class="item item1">
-          <img src="photo1.png" alt="" />
+          <img src="images/photo1.png" alt="" />
           <div class="price">
             <h4 class="item-name">Vintage Backbag</h4>
             <span class="cost"
@@ -26,26 +26,31 @@
             </span>
             <div class="qty">
               <div class="qty-num">
-                <div class="sub"><i class="fas fa-minus-square"></i></div>
-                <div class="num-text"><input type="text" readonly placeholder="1"></div>
-                <div class="add"><i class="fas fa-plus-square"></i></div>
+                <div class="sub"><i onclick="decrement1()" class="fas fa-minus"></i></div>
+                <div class="num-text">
+                  <input id="no-of-items1" type="text" readonly />
+                </div>
+                <div class="add"><i onclick="increment1()" class="fas fa-plus"></i></div>
               </div>
-              
             </div>
           </div>
         </div>
         <div class="item item2">
-          <img src="photo2.png" alt="" />
+          <img src="images/photo2.png" alt="" />
           <div class="price">
             <h4 class="item-name">Levi Shoes</h4>
             <span class="cost"
               >$74.99 <span class="discount">$124.99</span>
             </span>
             <div class="qty">
-               <div class="qty-num">
-                <div class="sub"><i class="fas fa-minus-square"></i></div>
-                <div class="num-text"><input type="text" readonly placeholder="1"></div>
-                <div class="add"><i class="fas fa-plus-square"></i></div>
+              <div class="qty-num">
+                <div class="sub"><i onclick="decrement2()" class="fas fa-minus"></i></div>
+                <div class="num-text">
+                  <input id="no-of-items2" type="text" readonly />
+                </div>
+                <div class="add">
+                  <i onclick="increment2()" class="fas fa-plus"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -57,14 +62,14 @@
           </div>
           <div class="Total">
             <span>Total</span>
-            <span id="total-cost">$148.98</span>
+            <span id="total-cost">$<span id="cost-num">148.98</span> </span>
           </div>
         </div>
       </div>
       <div class="form-container">
+        <form action="" id="form"  onsubmit="submitForms()">
         <div class="form contact-form">
           <h3>Contact information</h3>
-          <form action="">
             <label for="email">E-mail</label>
             <div class="email">
               <i class="fas fa-envelope"></i>
@@ -73,23 +78,25 @@
                 name="email"
                 id="email"
                 placeholder="Enter your email"
+                required
               />
             </div>
             <label for="phone">Phone</label>
             <div class="phone">
               <i class="fas fa-phone-alt"></i>
               <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter your email"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone"
+                required
+                type="number" 
               />
             </div>
-          </form>
+          
         </div>
         <div class="form shipping-form">
           <h3>Shipping address</h3>
-          <form action="">
+          <form action="" id="form2"></form>
             <label for="name">Full name</label>
             <div class="name">
               <i class="fas fa-user-circle"></i>
@@ -97,7 +104,8 @@
                 type="text"
                 name="name"
                 id="name"
-                placeholder="Rodney Cotton"
+                placeholder="Your name"
+                required
               />
             </div>
             <label for="address">Address</label>
@@ -108,6 +116,7 @@
                 name="address"
                 id="address"
                 placeholder="Your address.."
+                required
               />
             </div>
             <label for="city">City</label>
@@ -118,18 +127,27 @@
                 name="city"
                 id="city"
                 placeholder="Your city.."
+                required
               />
             </div>
             <div class="inline">
               <div class="country">
                 <label for="country">Country</label>
-                <div >
+                <div>
                   <i class="fas fa-globe-asia"></i>
-                  <select placeholder="Your country.." name="country" id="country">
-                    
-                    <option value="" disabled selected hidden>Your country..</option>
+                  <select
+                    placeholder="Your country.."
+                    name="country"
+                    id="country"
+                    required
+                  >
+                    <option value="" disabled selected hidden>
+                      Your country..
+                    </option>
                     <option value="Nepal">Nepal</option>
-                    <option value="Kathmandu">Kathmandu</option>
+                    <option value="USA">USA</option>
+                    <option value="Australia">Australia</option>
+                    <option value="China">China</option>
                   </select>
                 </div>
               </div>
@@ -138,24 +156,27 @@
                 <div>
                   <i class="fas fa-mail-bulk"></i>
                   <input
-                    type="postal"
                     name="postal"
                     id="postal"
                     placeholder="Your postal code.."
+                    required
+                    type="number" 
+                    maxlength="6"
                   />
                 </div>
               </div>
             </div>
             <div class="checkbox">
-              <input type="checkbox" name="save-info" id="save-info">
-              <label class="check"for="save-info">Save this information for next time</label>
+              <input type="checkbox" name="save-info" id="save-info" />
+              <label class="check" for="save-info"
+                >Save this information for next time</label
+              >
             </div>
+            <button id="continue-btn" type="submit" >Continue</button>
           </form>
-          <button id="continue-btn" type="submit">Continue</button>
         </div>
-        
-
       </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>

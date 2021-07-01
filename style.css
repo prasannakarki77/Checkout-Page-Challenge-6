@@ -75,6 +75,11 @@ div.qty {
 .qty i {
   position: static;
   color: #828282;
+  background: #e0e0e0;
+  padding: 5px;
+  transform: scale(1.1);
+  border-radius: 4px;
+  cursor: pointer;
 }
 .qty-num {
   display: flex;
@@ -119,11 +124,12 @@ div.qty {
   max-width: 465px;
   margin: 58px 0;
 }
-.form form div {
+.form div {
   position: relative;
 }
-form {
-  margin-top: 10px;
+
+h3 {
+  margin-bottom: 10px;
 }
 input,
 select {
@@ -138,6 +144,11 @@ select {
   line-height: 20px;
   color: #828282;
   margin-bottom: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 i {
@@ -168,9 +179,6 @@ h3 {
   display: flex;
   justify-content: space-between;
 }
-/* .inline div{
-  display: inline-block;
-} */
 
 div.country,
 div.postal {
@@ -213,6 +221,10 @@ input[type="checkbox"] {
   font-weight: bolder;
   font-size: 16px;
   cursor: pointer;
+  transition: 0.12s ease-in;
+}
+#continue-btn:hover {
+  transform: scale(1.02);
 }
 
 @media (max-width: 1027px) {
