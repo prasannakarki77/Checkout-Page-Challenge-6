@@ -41,4 +41,3 @@ function submitForms(){
     window.alert("Checkout successfull!!");
 }
 
-// function
