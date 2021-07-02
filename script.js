@@ -40,3 +40,5 @@ function decrement2(){
 function submitForms(){
     window.alert("Checkout successfull!!");
 }
+
+// function
